@@ -6,7 +6,7 @@ package com.on.java.basic.ch11.innerclasses;
  **/
 public class DotNew {
 
-    public class Inner() {
+    public class Inner {
 
     }
 
