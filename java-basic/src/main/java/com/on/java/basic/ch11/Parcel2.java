@@ -1,10 +1,10 @@
-package com.on.java.basic.ch11.innerclasses;
+package com.on.java.basic.ch11;
 
 /**
  * @author zhangzhou
  * @date 2026/10/21 16:18
  **/
-public class Parcel1 {
+public class Parcel2 {
 
     class Contents {
         private int i = 11;
@@ -26,6 +26,14 @@ public class Parcel1 {
         }
     }
 
+    public Destination to(String s) {
+        return new Destination(s);
+    }
+
+    public Contents contents() {
+        return new Contents();
+    }
+
     public void ship(String dest) {
         Contents c = new Contents();
         Destination d = new Destination(dest);
@@ -33,7 +41,11 @@ public class Parcel1 {
     }
 
     public static void main(String[] args) {
-        Parcel1 p = new Parcel1();
+        Parcel2 p = new Parcel2();
         p.ship("Tasmania");
+        Parcel2 q = new Parcel2();
+        //定义指向内部类的引用
+        Parcel2.Contents c = q.contents();
+        Parcel2.Destination d = q.to("Borneo");
     }
 }
