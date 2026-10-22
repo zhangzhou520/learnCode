@@ -9,6 +9,7 @@
         <module name="concurrent" />
         <module name="java-basic" />
         <module name="example1" />
+        <module name="small-spring-step-02" />
         <module name="example2" />
         <module name="small-spring-step-01" />
       </profile>
