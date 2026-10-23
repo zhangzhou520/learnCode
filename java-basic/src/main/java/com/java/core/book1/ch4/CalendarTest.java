@@ -1,4 +1,4 @@
-package com.java.core.book1;
+package com.java.core.book1.ch4;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
