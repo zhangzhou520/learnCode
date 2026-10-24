@@ -1,4 +1,4 @@
-package com.java.core.book1;
+package com.java.core.book1.ch5;
 
 import java.time.LocalDate;
 
