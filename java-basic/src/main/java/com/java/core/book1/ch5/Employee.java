@@ -12,7 +12,7 @@ public class Employee {
     private double salary;
     private LocalDate hireDay;
 
-    public Employee(String n, double s, int year, int month, int day) {
+    public Employee(String n, double s, int day, int month, int year) {
         name = n;
         salary = s;
         hireDay = LocalDate.of(year, month, day);
