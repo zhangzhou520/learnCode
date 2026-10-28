@@ -30,7 +30,7 @@ public class ReflectionTest {
         }
         System.out.print("Class " + name);
         if (superCl != null && superCl != Object.class) {
-            System.out.println(" extends " + superCl.getName());
+            System.out.print(" extends " + superCl.getName());
         }
         System.out.print("\n{\n");
         pringConsttuctors(cl);
@@ -57,7 +57,7 @@ public class ReflectionTest {
                 if (j > 0) {
                     System.out.print(", ");
                 }
-                System.out.println(paramTypes[j].getName());
+                System.out.print(paramTypes[j].getName());
             }
             System.out.println(");");
         }
@@ -73,14 +73,14 @@ public class ReflectionTest {
             if (modifiers.length() > 0) {
                 System.out.print(modifiers + " ");
             }
-            System.out.println(retType.getName() + " " + name + "(");
+            System.out.print(retType.getName() + " " + name + "(");
 
             Class[] paramTypes = m.getParameterTypes();
             for (int j = 0; j < paramTypes.length; j++) {
                 if (j > 0) {
                     System.out.print(", ");
                 }
-                System.out.println(paramTypes[j].getName());
+                System.out.print(paramTypes[j].getName());
             }
             System.out.println(");");
         }
