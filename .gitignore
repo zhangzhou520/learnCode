@@ -1,0 +1,5 @@
+# 忽略 small-spring 模块（内含独立 git 仓库）
+small-spring/
+
+# 忽略 Maven 构建输出
+java-basic/target/
