@@ -10,11 +10,13 @@
         <module name="concurrent" />
         <module name="java-basic" />
         <module name="example1" />
-        <module name="small-spring-step-02" />
         <module name="example2" />
-        <module name="small-spring-step-01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="small-spring-step-01" target="1.8" />
+      <module name="small-spring-step-02" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
